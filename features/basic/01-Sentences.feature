@@ -13,3 +13,11 @@ Feature: Basic Sentence Parsing
     Then there should be 2 header sentences
     And there should be 1 channel sentence
 
+  Scenario: Parsing a malformed command line
+    Given a BMS file as follows
+      """
+      #TITLE BY MY SIDE
+      #ARTIST:flicknote
+      """
+    Then there should be 1 header sentence
+

@@ -8,7 +8,7 @@ Feature: Time Signature
       #00211:02
       #00311:03
       """
-    Then object 01 should be on beat 4
-     And object 02 should be on beat 7
-     And object 03 should be on beat 11
-     And object 03 should be on beat 5.5
+    Then object 01 should be at beat 4
+     And object 02 should be at beat 7
+     And object 03 should be at beat 11
+     And object 03 should be at beat 5.5
