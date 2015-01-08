@@ -11,4 +11,4 @@ Feature: Time Signature
     Then object 01 should be at beat 4
      And object 02 should be at beat 7
      And object 03 should be at beat 11
-     And object 03 should be at beat 5.5
+     And object 04 should be at beat 5.5
