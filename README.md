@@ -1,7 +1,8 @@
-Executable BMS Specification
-============================
+bmspec
+======
 
-This project aims to have implementors of BMS parsers to parse well-formatted BMS files in a consistent way.
+__This is NOT the official BMS specification.__
+This project aims to specify the BMS file format in a way that can be automatically tested.
 
 
 Example
@@ -39,8 +40,10 @@ Resources
 Structure
 ---------
 
-Since BMS file format has been applied to multiple games, not all spec apply to all use cases.
-Implementations should pass the `basic` features, and pass additional advanced features they wish to support.
+Since BMS file format has been applied to multiple games,
+not all implementors implement all features.
+
+Instead, implementations can check with each feature to see whether they support it or not.
 
 
 1. basic
