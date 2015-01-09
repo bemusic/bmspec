@@ -8,24 +8,28 @@ This project aims to specify the BMS file format in a way that can be automatica
 Example
 -------
 
-Specification for BMS will be written in Gherkin language, like this:
+Here's how Gherkin language looks like:
 
 ```cucumber
   Scenario: Time signature
     Given a BMS file as follows
       """
       #00102:0.750
-      #00001:01
-      #00002:01
-      #00003:01
+      #00111:0104
+      #00211:02
+      #00311:03
       """
-    Then there should be 3 objects
-    And there should be 1 object at beat 0
-    And there should be 1 object at beat 4
-    And there should be 1 object at beat 7
+    Then object 01 should be at beat 4
+     And object 02 should be at beat 7
+     And object 03 should be at beat 11
+     And object 04 should be at beat 5.5
 ```
 
-Then implementors can execute this specification using [Cucumber](http://cukes.info/).
+[Cucumber](http://cukes.info/) can parse this language
+to validate the BMS implementation.
+For example, see the [bms-js][] project.
+
+[bms-js]: https://github.com/bemusic/bms-js/
 
 
 
