@@ -51,3 +51,16 @@ Feature: STOP
       """
     Then object 01 should be at 4 seconds
      And object 02 should be at 11 seconds
+
+  Scenario: Stop on Same Beat as Another Object
+    Given a BMS file as follows
+      """
+      #BPM 120
+      #STOP11 192
+      #00111:01020304
+      #00109:11000000
+      """
+    Then object 01 should be at 2 seconds
+     And object 02 should be at 4.5 seconds
+     And object 03 should be at 5 seconds
+     And object 04 should be at 5.5 seconds
