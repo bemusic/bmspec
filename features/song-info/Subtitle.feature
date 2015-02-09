@@ -1,4 +1,4 @@
-Feature: Subtitles
+Feature: Subtitles (Basic)
 
   Some songs may have subtitles, such as [Beginner].
 

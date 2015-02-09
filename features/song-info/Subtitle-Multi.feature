@@ -1,4 +1,4 @@
-Feature: Subtitles
+Feature: Subtitles (Multiplex)
 
   Some songs may have multiple subtitles.
 

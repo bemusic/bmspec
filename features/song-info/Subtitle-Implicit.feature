@@ -1,4 +1,4 @@
-Feature: Subtitles
+Feature: Subtitles (Implicit)
 
   Subtitles can be derived from `#TITLE`.
 
