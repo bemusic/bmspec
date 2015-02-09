@@ -1,10 +1,5 @@
 Feature: LNTYPE 1
 
-  Please see the section BML in BMS command memo for more information about
-  history of the Long-Note system:
-
-  http://hitkey.nekokan.dyndns.info/cmds.htm#BML
-
   Scenario: Long Note Channel
     Given a BMS file as follows
       """
