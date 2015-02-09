@@ -1,0 +1,12 @@
+language: ruby
+env:
+  global:
+    # RELISH_API_TOKEN
+    secure: "szZ78AgkoWehggdaR9V7kOcbmnUcSdxIyso1criF+5XXHXTYq438dphnkVFrwlsmLg8adynuZwEqGFRLMDJgo1Jodfm6X/w5UtxfhrCxaz64WBMzArbdyOISpTjyQqc4S4o0O5FJoWM7AjqDu2QKh8GkTYJyPhNvNMC/oC25+eo="
+
+install: gem install relish
+script: 'true'
+after_success:
+  - 'echo "---" > ~/.relish'
+  - 'echo "api_token: $RELISH_API_TOKEN" >> ~/.relish'
+  - 'relish push bemusic/bmspec'
